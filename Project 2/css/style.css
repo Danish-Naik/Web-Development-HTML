@@ -1,0 +1,246 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Header Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.cta {
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.intro h1 span {
+  font-size: 2.5rem;
+  color: #7f53ac;
+}
+.intro p {
+  margin: 1rem 0;
+}
+.intro button {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #fc5c7d;
+  background: none;
+  color: #fc5c7d;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.intro img {
+  max-width: 400px;
+}
+
+/* Feature Cards */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.card {
+  width: 160px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.purple { background: #a18cd1; }
+.white { background: #fff; color: #333; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.green { background: #38ef7d; }
+.orange { background: #f7971e; }
+
+/* About Me */
+.about-me {
+  display: flex;
+  padding: 3rem;
+  gap: 2rem;
+}
+.about-me img {
+  width: 50%;
+}
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-text small {
+  color: gray;
+}
+.about-text p {
+  margin: 0.5rem 0;
+}
+
+/* Skills */
+.skills {
+  padding: 2rem 3rem;
+}
+.skills h2 {
+  margin-bottom: 1rem;
+}
+.skills ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Projects */
+.projects {
+  padding: 2rem;
+  background: #fafafa;
+}
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.project {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #6a82fb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Skills */
+.skills {
+  padding: 2rem;
+  background: #ffffff;
+}
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.skills ul {
+  list-style-type: square;
+  padding-left: 2rem;
+}
+.skills li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Experience */
+.experience {
+  padding: 2rem;
+  background: #f7f7f7;
+}
+.experience h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid #fc5c7d;
+}
+.experience-item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.experience-item p {
+  margin: 0.2rem 0;
+}
+
+
+
+/* Certifications */
+.certifications {
+  padding: 2rem 3rem;
+}
+.certifications h2 {
+  margin-bottom: 1rem;
+}
+.certifications ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 2rem 3rem;
+  background-color: #f5f5f5;
+}
+.testimonials h2 {
+  margin-bottom: 1rem;
+  color: #7f53ac;
+}
+.testimonials p {
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  color: white;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-left img {
+  width: 60px;
+}
+.footer-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-right input,
+.footer-right textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+}
+.footer-right button {
+  background: white;
+  color: #fc5c7d;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Website with Clock</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    #clock {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2em;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Simple Website</h1>
+    <div id="clock">--:--:--</div>
+  </header>
+
+  <main>
+    <p>Quick links:</p>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+  </main>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById('clock').textContent = time;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // run once immediately
+  </script>
+
+</body>
+</html>
